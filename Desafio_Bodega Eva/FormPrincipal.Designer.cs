@@ -28,12 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lblTitulo = new Label();
+            btnPedidos = new Button();
+            btnVentas = new Button();
+            btnSalir = new Button();
+            SuspendLayout();
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(254, 66);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(76, 15);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "BODEGA EVA";
+            // 
+            // btnPedidos
+            // 
+            btnPedidos.Location = new Point(376, 130);
+            btnPedidos.Name = "btnPedidos";
+            btnPedidos.Size = new Size(75, 23);
+            btnPedidos.TabIndex = 2;
+            btnPedidos.Text = "Pedidos";
+            btnPedidos.UseVisualStyleBackColor = true;
+            btnPedidos.Click += btnPedidos_Click;
+            // 
+            // btnVentas
+            // 
+            btnVentas.Location = new Point(376, 194);
+            btnVentas.Name = "btnVentas";
+            btnVentas.Size = new Size(75, 23);
+            btnVentas.TabIndex = 4;
+            btnVentas.Text = "Ventas";
+            btnVentas.UseVisualStyleBackColor = true;
+            btnVentas.Click += btnVentas_Click;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(128, 273);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(75, 23);
+            btnSalir.TabIndex = 5;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // FormPrincipal
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(631, 365);
+            Controls.Add(btnSalir);
+            Controls.Add(btnVentas);
+            Controls.Add(btnPedidos);
+            Controls.Add(lblTitulo);
+            Name = "FormPrincipal";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblTitulo;
+        private Button btnPedidos;
+        private Button btnVentas;
+        private Button btnSalir;
     }
 }
