@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bodega_Eva.Formularios
+namespace Desafio_Bodega_Eva.Formularios
 {
     internal class FormOperaciones
     {
