@@ -1,6 +1,6 @@
 ﻿namespace Desafio_Bodega_Eva
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         ///  Required designer variable.
