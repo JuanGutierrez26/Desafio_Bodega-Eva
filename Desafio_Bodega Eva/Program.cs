@@ -1,3 +1,4 @@
+using Desafio_Bodega_Eva.Formularios;
 namespace Desafio_Bodega_Eva
 {
     internal static class Program
@@ -12,6 +13,8 @@ namespace Desafio_Bodega_Eva
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new FormPrincipal());
+            //Application.Run(new FormPedidos());
+            //Application.Run(new FormVentas());
         }
     }
 }
