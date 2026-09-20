@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bodega_Eva.Modelos
+namespace Desafio_Bodega_Eva.Modelos
 {
     internal class Boleta
     {
