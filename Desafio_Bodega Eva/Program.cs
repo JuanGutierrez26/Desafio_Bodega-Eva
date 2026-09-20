@@ -1,4 +1,4 @@
-namespace Desafio_Desafio_Bodega_Eva
+namespace Desafio_Bodega_Eva
 {
     internal static class Program
     {
