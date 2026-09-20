@@ -8,5 +8,6 @@ namespace Desafio_Bodega_Eva.Modelos
 {
     internal class Venta
     {
+
     }
 }

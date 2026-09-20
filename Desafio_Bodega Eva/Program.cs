@@ -1,3 +1,4 @@
+using Desafio_Bodega_Eva.Formularios;
 namespace Desafio_Bodega_Eva
 {
     internal static class Program
@@ -11,7 +12,8 @@ namespace Desafio_Bodega_Eva
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormPrincipal());
+            //Application.Run(new FormPrincipal());
+            Application.Run(new FormPedidos());
         }
     }
 }

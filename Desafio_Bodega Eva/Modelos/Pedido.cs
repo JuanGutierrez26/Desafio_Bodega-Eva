@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Desafio_Bodega_Eva.Modelos
 {
-    internal class Pedido
+    public class Pedido
     {
         public int Codigo { get; set; }
         public string Cliente { get; set; }

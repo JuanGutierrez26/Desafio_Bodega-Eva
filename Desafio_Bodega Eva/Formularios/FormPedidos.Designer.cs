@@ -30,8 +30,6 @@
         {
             lblTitulo = new Label();
             lblSubtitulo = new Label();
-            labellblCodigo = new Label();
-            txtCodigo = new TextBox();
             txtCliente = new TextBox();
             lblCliente = new Label();
             lblProductos = new Label();
@@ -56,7 +54,6 @@
             lblTitulo.Size = new Size(265, 37);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "PEDIDOS WHATSAPP";
-            lblTitulo.Click += lblTitulo_Click;
             // 
             // lblSubtitulo
             // 
@@ -67,26 +64,9 @@
             lblSubtitulo.TabIndex = 1;
             lblSubtitulo.Text = "Gestión de pedidos en espera";
             // 
-            // labellblCodigo
-            // 
-            labellblCodigo.AutoSize = true;
-            labellblCodigo.Location = new Point(43, 156);
-            labellblCodigo.Name = "labellblCodigo";
-            labellblCodigo.Size = new Size(49, 15);
-            labellblCodigo.TabIndex = 2;
-            labellblCodigo.Text = "Código:";
-            labellblCodigo.Click += labellblCodigo_Click;
-            // 
-            // txtCodigo
-            // 
-            txtCodigo.Location = new Point(155, 153);
-            txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(347, 23);
-            txtCodigo.TabIndex = 3;
-            // 
             // txtCliente
             // 
-            txtCliente.Location = new Point(155, 202);
+            txtCliente.Location = new Point(155, 126);
             txtCliente.Name = "txtCliente";
             txtCliente.Size = new Size(347, 23);
             txtCliente.TabIndex = 4;
@@ -94,7 +74,7 @@
             // lblCliente
             // 
             lblCliente.AutoSize = true;
-            lblCliente.Location = new Point(43, 205);
+            lblCliente.Location = new Point(43, 129);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(47, 15);
             lblCliente.TabIndex = 5;
@@ -103,7 +83,7 @@
             // lblProductos
             // 
             lblProductos.AutoSize = true;
-            lblProductos.Location = new Point(43, 253);
+            lblProductos.Location = new Point(43, 177);
             lblProductos.Name = "lblProductos";
             lblProductos.Size = new Size(64, 15);
             lblProductos.TabIndex = 6;
@@ -112,7 +92,7 @@
             // lblCantidad
             // 
             lblCantidad.AutoSize = true;
-            lblCantidad.Location = new Point(43, 296);
+            lblCantidad.Location = new Point(43, 220);
             lblCantidad.Name = "lblCantidad";
             lblCantidad.Size = new Size(55, 15);
             lblCantidad.TabIndex = 7;
@@ -121,7 +101,7 @@
             // lblTotal
             // 
             lblTotal.AutoSize = true;
-            lblTotal.Location = new Point(43, 343);
+            lblTotal.Location = new Point(43, 267);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(36, 15);
             lblTotal.TabIndex = 8;
@@ -129,38 +109,39 @@
             // 
             // txtProductos
             // 
-            txtProductos.Location = new Point(156, 250);
+            txtProductos.Location = new Point(156, 174);
             txtProductos.Name = "txtProductos";
             txtProductos.Size = new Size(346, 23);
             txtProductos.TabIndex = 10;
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(156, 293);
+            txtCantidad.Location = new Point(156, 217);
             txtCantidad.Name = "txtCantidad";
             txtCantidad.Size = new Size(346, 23);
             txtCantidad.TabIndex = 11;
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(155, 335);
+            txtTotal.Location = new Point(155, 259);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(347, 23);
             txtTotal.TabIndex = 12;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(204, 406);
+            btnRegistrar.Location = new Point(205, 315);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(157, 23);
             btnRegistrar.TabIndex = 13;
             btnRegistrar.Text = "REGISTRAR PEDIDO";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // lstPedidos
             // 
             lstPedidos.FormattingEnabled = true;
-            lstPedidos.Location = new Point(27, 479);
+            lstPedidos.Location = new Point(28, 388);
             lstPedidos.Name = "lstPedidos";
             lstPedidos.Size = new Size(525, 169);
             lstPedidos.TabIndex = 14;
@@ -168,7 +149,7 @@
             // lblLista
             // 
             lblLista.AutoSize = true;
-            lblLista.Location = new Point(27, 451);
+            lblLista.Location = new Point(28, 360);
             lblLista.Name = "lblLista";
             lblLista.Size = new Size(115, 15);
             lblLista.TabIndex = 15;
@@ -176,17 +157,18 @@
             // 
             // btnAtender
             // 
-            btnAtender.Location = new Point(204, 678);
+            btnAtender.Location = new Point(221, 582);
             btnAtender.Name = "btnAtender";
             btnAtender.Size = new Size(140, 23);
             btnAtender.TabIndex = 16;
             btnAtender.Text = "ATENDER SIGUIENTE";
             btnAtender.UseVisualStyleBackColor = true;
+            btnAtender.Click += btnAtender_Click;
             // 
             // lblCantidadPedidos
             // 
             lblCantidadPedidos.AutoSize = true;
-            lblCantidadPedidos.Location = new Point(219, 723);
+            lblCantidadPedidos.Location = new Point(236, 627);
             lblCantidadPedidos.Name = "lblCantidadPedidos";
             lblCantidadPedidos.Size = new Size(102, 15);
             lblCantidadPedidos.TabIndex = 17;
@@ -196,7 +178,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 761);
+            ClientSize = new Size(584, 669);
             Controls.Add(lblCantidadPedidos);
             Controls.Add(btnAtender);
             Controls.Add(lblLista);
@@ -210,13 +192,10 @@
             Controls.Add(lblProductos);
             Controls.Add(lblCliente);
             Controls.Add(txtCliente);
-            Controls.Add(txtCodigo);
-            Controls.Add(labellblCodigo);
             Controls.Add(lblSubtitulo);
             Controls.Add(lblTitulo);
             Name = "FormPedidos";
             Text = "FormPedidos";
-            Load += FormPedidos_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -225,8 +204,6 @@
 
         private Label lblTitulo;
         private Label lblSubtitulo;
-        private Label labellblCodigo;
-        private TextBox txtCodigo;
         private TextBox txtCliente;
         private Label lblCliente;
         private Label lblProductos;
