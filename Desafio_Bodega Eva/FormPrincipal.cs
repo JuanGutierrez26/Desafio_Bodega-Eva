@@ -21,6 +21,24 @@ namespace Desafio_Bodega_Eva
             form.ShowDialog();
         }
 
+        private void btnOperaciones_Click(object sender, EventArgs e)
+        {
+            FormOperaciones form = new FormOperaciones();
+            form.ShowDialog();
+        }
+
+        private void btnBoletas_Click(object sender, EventArgs e)
+        {
+            FormBoletas form = new FormBoletas();
+            form.ShowDialog();
+        }
+
+        private void btnGrafo_Click(object sender, EventArgs e)
+        {
+            FormGrafo form = new FormGrafo();
+            form.ShowDialog();
+        }
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
